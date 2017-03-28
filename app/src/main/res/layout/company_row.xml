@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItemImage"
+        android:src="@drawable/ic_action_trending_neutral"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="15dp"
+        />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="List Items"
+        android:id="@+id/ListItemTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/listItemImage"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginBottom="2dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="this is item message"
+        android:id="@+id/listItemBody"
+        android:layout_below="@+id/ListItemTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/listItemImage"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginBottom="2dp"
+        />
+
+
+</RelativeLayout>
